@@ -838,13 +838,14 @@ img {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 48px;
-  max-width: 353px;
 }
 
 .menu-container .address-li:last-child {
   color: var(--iris);
   font-size: 36px;
   font-weight: 700;
+  left: 0;
+  min-width: 353px;
   position: absolute;
   top: -80px;
 }
@@ -854,7 +855,9 @@ img {
 }
 
 .menu-social-list {
-  gap: 56px;
+  flex-wrap: nowrap;
+  gap: 0;
+  justify-content: space-between;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
