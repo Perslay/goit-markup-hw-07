@@ -39,7 +39,7 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  max-width: 1158px;
+  max-width: 428px;
 }
 
 .link {
@@ -167,6 +167,7 @@ img {
   align-items: center;
   display: flex;
   height: 70px;
+  max-width: 428px;
   position: relative;
 }
 
@@ -228,7 +229,7 @@ img {
   background-size: cover;
   margin: 0 auto;
   max-width: 1440px;
-  padding: auto 0;
+  padding: 112px 0;
 }
 
 .first-heading {
@@ -236,7 +237,7 @@ img {
   font-size: 36px;
   letter-spacing: 0.02em;
   line-height: 1.11;
-  max-width: 496px;
+  max-width: 320px;
   text-align: center;
   margin: 0 auto 48px auto;
 }
@@ -286,7 +287,6 @@ img {
 
 .team-list {
   margin: 0 auto;
-  max-width: 264px;
 }
 
 .team-li {
@@ -334,7 +334,6 @@ img {
 .customers-list {
   column-gap: 16px;
   margin: 0 auto;
-  max-width: 396px;
 }
 
 .customers-li {
@@ -377,6 +376,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  max-width: 428px;
 }
 
 .footer-left {
@@ -876,10 +876,16 @@ img {
 /* tablet */
 
 @media all and (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+
   /* header */
 
   .header-wrap {
     height: 72px;
+    max-width: 768px;
   }
 
   .navigation {
@@ -930,6 +936,7 @@ img {
   .first-heading {
     font-size: 56px;
     line-height: 1.07;
+    max-width: 496px;
   }
 
   .traits-list {
@@ -948,12 +955,10 @@ img {
 
   .team-list {
     gap: 64px 24px;
-    max-width: 552px;
   }
 
   .customers-list {
     gap: 72px 24px;
-    max-width: 552px;
   }
 
   .customers-li {
@@ -964,11 +969,15 @@ img {
 
   .footer-wrap {
     gap: 72px 24px;
-    justify-content: center;
+    max-width: 584px
   }
   
   .footer-left {
     margin: 0;
+  }
+
+  .logo-footer {
+    text-align: left;
   }
 
   .footer-social-div {
@@ -979,17 +988,12 @@ img {
     text-align: left;
   }
 
-  .footer-form-div {
-    justify-content: center;
-    max-width: 454px;
-  }
-
   .footer-form {
     gap: 24px;
   }
 
   .footer-label {
-    max-width: 264px;
+    width: 264px;
   }
 
   .subscribe-button {
@@ -1008,7 +1012,6 @@ img {
 
   .portfolio-app-list {
     gap: 72px 24px;
-    max-width: 736px;
   }
 
   .portfolio-app-li {
@@ -1035,7 +1038,16 @@ img {
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1158px) {
+
+  .container {
+    max-width: 1158px;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
   /* header */
 
   .header-wrap .address {
@@ -1052,17 +1064,16 @@ img {
 
   /* main studio */
 
-  .section {
-    padding: 120px 0;
+  .starting-section {
+    padding: 188px 0;
   }
 
   .traits-list {
     flex-wrap: nowrap;
-    max-width: 1128px;
   }
 
   .traits-li {
-    max-width: 264px;
+    min-width: 264px;
   }
 
   .traits-div {
@@ -1096,12 +1107,10 @@ img {
 
   .team-list {
     flex-wrap: nowrap;
-    max-width: 1128px;
   }
 
   .customers-list {
     flex-wrap: nowrap;
-    max-width: 1128px;
   }
 
   .customers-li {
@@ -1110,12 +1119,22 @@ img {
 
   /* footer */
 
+  .footer-wrap {
+    gap: 0;
+    max-width: 1160px;
+  }
+
   .footer-left {
     margin-right: 120px;
   }
 
   .footer-form-div {
     margin-left: auto;
+    width: auto;
+  }
+
+  .footer-form {
+    flex-wrap: nowrap;
   }
 
   /* portfolio */
@@ -1126,11 +1145,10 @@ img {
 
   .portfolio-app-list {
     gap: 48px 24px;
-    min-width: 1128px;
   }
 
   .portfolio-app-li {
-    max-width: 360px;
+    width: 360px;
   }
 
   /* modal */
