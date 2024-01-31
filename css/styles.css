@@ -878,7 +878,6 @@ img {
 /* tablet */
 
 @media all and (min-width: 768px) {
-
   .container {
     max-width: 768px;
   }
@@ -971,9 +970,9 @@ img {
 
   .footer-wrap {
     gap: 72px 24px;
-    max-width: 584px
+    max-width: 584px;
   }
-  
+
   .footer-left {
     margin: 0;
   }
@@ -1041,7 +1040,6 @@ img {
 }
 
 @media all and (min-width: 1158px) {
-
   .container {
     max-width: 1158px;
   }
